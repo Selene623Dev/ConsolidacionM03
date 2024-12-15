@@ -1,7 +1,11 @@
+/**
+* !General
+**/
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -13,6 +17,7 @@ i{
 }
 
 a{
+    margin-top: 15px;
     text-decoration: none;
     color: #fff;
 }
@@ -27,8 +32,8 @@ a{
     justify-content: space-between;
     background-color: #240046;
     color: aliceblue;
-    padding: 25px 60px;
-    margin-bottom: 30px;
+    padding: 15px 60px;
+    margin-bottom: 20px;
 }
 
 .cart{
@@ -40,12 +45,12 @@ a{
     border-radius: 4px;
 }
 
-.cartamoun{
+.cartamount{
     position: absolute;
     top: -15px;
     right: -10px;
     font-size: 16px;
-    background-color: #9d4edd;
+    background-color: #7a2dc2;
     color: #fff;
     padding: 3px;
     border-radius: 3px;
@@ -84,6 +89,7 @@ a{
     flex-direction: column;
     padding: 10px;
     gap: 10px;
+    text-align: center;
 }
 
 .price-quantity{
@@ -109,7 +115,7 @@ a{
 }
 
 /**
-* !Style rules for label and some buttoms
+* !Reglas de estilos para etiquetas y algunos botones
 **/
 
 .text-center{
