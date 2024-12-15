@@ -30,6 +30,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     background-color: #240046;
     color: aliceblue;
     padding: 15px 60px;
@@ -84,12 +85,16 @@ a{
     border-radius: 4px;
 }
 
+.item img{
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
 .details{
     display: flex;
     flex-direction: column;
     padding: 10px;
     gap: 10px;
-    text-align: center;
 }
 
 .price-quantity{
@@ -123,7 +128,9 @@ a{
     margin-bottom: 20px;
 }
 
-.HomeBtn{
+.HomeBtn,
+.checkout,
+.removeAll{
     background-color: #240046;
     color: #fff;
     border: none;
@@ -131,4 +138,58 @@ a{
     border-radius: 3px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+.checkout{
+    background-color: green;
+}
+
+.removeAll{
+    background-color: red;
+}
+
+.bi-x{
+    color: red;
+    font-weight: bold;
+}
+
+/**
+* ! Reglas de estilo para el carrito
+**/
+
+.shopping-cart{
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    justify-content: center;
+    gap: 15px;
+}
+
+/**
+* ! Reglas de estilo para items en carrito
+**/
+
+.cart-item{
+border: 2px solid #000 ;
+border-radius: 3px;
+display: flex;
+}
+
+.title-price-x{
+    width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cart-item-price{
+    background-color: #240046;
+    color: #fff;
+    border-radius: 4px;
+    padding: 3px;
 }
